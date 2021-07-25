@@ -27,13 +27,13 @@ jobs:
             ${{ runner.os }}-node-
       - run: npm ci
       - run: npm run build
-        env: 
+        env:
           CONTENTFUL_SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
           CONTENTFUL_ACCESS_TOKEN: ${{ secrets.CONTENTFUL_ACCESS_TOKEN }}
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          publish_branch: main
+          publish_branch: gh-pages
           publish_dir: ./public
           allow_empty_commit: true
