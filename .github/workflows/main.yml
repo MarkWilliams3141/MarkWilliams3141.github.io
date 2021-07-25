@@ -37,4 +37,3 @@ jobs:
           publish_branch: main
           publish_dir: ./public
           allow_empty_commit: true
-          publish_dir: ./public
