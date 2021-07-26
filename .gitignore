@@ -67,3 +67,13 @@ public
 .contentful.json
 # Local Netlify folder
 .netlify
+
+# environment files
+.env.development
+.env.production
+
+# intelliJ config
+.idea/
+
+# contentful error logs
+contentful-import-error-log-*.json
